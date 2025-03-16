@@ -1,0 +1,92 @@
+## week 1
+
+- <p> just for simple text
+- view port is the area where the resources are loaded. it does not belong to the browser elements
+- html element: <p>content</p>
+
+- script tag can be used outside of the html standard body
+
+- what is visible in view port will be placed in the body, everything else in head
+
+## week 2
+
+- <div> and <span> doesn't do anything functionally and visually
+- <span> inside of text
+- <br> inside of text
+
+- padding(bettween element with their own border, if no border) vs margin(to another element)
+
+- content - padding - border - margin(think of it in raport of other elements (always))
+
+- css: selector { properties: name : value; };
+- id select should be unique (even if css can)
+
+- html ref => ids
+
+- selector
+  - markup
+  - class
+  - id
+  - global: *
+  - attribute
+
+- pseudo-class :
+- pseudo-element ::
+- before, after insert html
+
+- descendant combinators
+  - read them from right to left
+  - constraint from left to right
+  - e.g.: body section p
+https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Combinators
+
+- next - + 
+- subsequent
+
+## week 3
+
+- block vs inline display
+
+- block == one below another'
+
+- cascade
+- specificity
+- inheritance
+
+- css origin
+  - external stylesheet = extra file
+  - head tag inside the tag style 
+  - any hypertag - style tag/attribute
+
+- flex and grid (read about them) - floats chapter
+
+- float cuts up the view port
+
+- horizontal scroll - BAD PRACTICE
+- tables - will enforce the horizontal scroll
+
+- homework:
+  - read until html images: https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Headings_and_paragraphs
+  - understand div vs section vs article
+
+  - css
+    - The box model
+    - Handling conflicts
+    - CSS values and units
+    - Sizing items in CSS
+    - Backgrounds and borders
+    - Overflowing content
+    - flex grid
+    - position
+
+  - play the game after reading the theory
+
+## homework
+
+- article
+  - encloses info on the page that has meaning by its own
+  - e.g. blog post
+
+- section
+  - groups up info on the page that provide functionality
+  - starts with heading
