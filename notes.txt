@@ -65,9 +65,23 @@ https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basi
 - horizontal scroll - BAD PRACTICE
 - tables - will enforce the horizontal scroll
 
-- homework:
+## homework
+
+- https://developer.mozilla.org/en-US/docs/Glossary/Character_reference
+
+- article
+  - encloses info on the page that has meaning by its own
+  - e.g. blog post
+
+- section
+  - groups up info on the page that provides functionality
+  - starts with heading
+
+- <blockquote> vs <q> == block vs inline
+- <pre> - preserves the white spaces
+
+- todo:
   - read until html images: https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Headings_and_paragraphs
-  - understand div vs section vs article
 
   - css
     - The box model
@@ -80,13 +94,3 @@ https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basi
     - position
 
   - play the game after reading the theory
-
-## homework
-
-- article
-  - encloses info on the page that has meaning by its own
-  - e.g. blog post
-
-- section
-  - groups up info on the page that provide functionality
-  - starts with heading
