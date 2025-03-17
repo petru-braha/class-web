@@ -80,17 +80,46 @@ https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basi
 - <blockquote> vs <q> == block vs inline
 - <pre> - preserves the white spaces
 
-- todo:
-  - read until html images: https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Headings_and_paragraphs
+- <a href=""><cite>
+- <address> = contact information
+- <sup> <sub> - inline
 
-  - css
-    - The box model
-    - Handling conflicts
-    - CSS values and units
-    - Sizing items in CSS
-    - Backgrounds and borders
-    - Overflowing content
-    - flex grid
-    - position
+- attributes:
+  - title is displayed when hovering over the content
+  - target="_blank" => open in a new tab
+  - alt is alternative text in case if the resource can not load
+  - specifying width and height allocates space before loading image
+  - display: block/inline - refers to outer box display
+    - by default flex/grid refers to outer box too
+
+- document fragments - href of an id
+- use your own content (images)
+
+- licenses
+  - all rights reserved (default)
+    - you need explicit written permission to use the content
+    - you DO NOT need that in case of fair use
+      - quoting/commenting upon
+      - criticize
+      - parody
+    - authors are not required to include a copyright notice
+  - permissive - mit licence
+  - public domain/CC0
+
+- replaced element = its content and size is changed my external source
+
+
+
+
+- todo:
+  - The box model
+  - Handling conflicts
+  - CSS values and units
+  - Sizing items in CSS
+  - Backgrounds and borders
+
+  - Overflowing content
+  - flex grid
+  - position
 
   - play the game after reading the theory
