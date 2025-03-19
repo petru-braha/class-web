@@ -71,8 +71,6 @@ https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basi
 
 ## solo
 
-- https://developer.mozilla.org/en-US/docs/Glossary/Character_reference
-
 - article
   - encloses info on the page that has meaning by its own
   - e.g. blog post
@@ -116,12 +114,49 @@ https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basi
   - "h1, h2" = selector list
   - "h1 h2" = combinators
 
+- css data type: <dimension> covers
+  - <length>
+  - <angle>
+  - <time>
+  - <resolution>
+
+- px, em(relative), vh, vw
+
+week 4:
+
+- 1fr one fraction - of the container
+
+- responsivness = relative dimensions
+  - inch
+  - count of pixels
+  - flexboxes / grids g00d
+  - media query - if statements about context
+
+- device independent pixels
+  - viewport is smaller than a the screen itself
+
+- <meta name="viewport" content="width=device-width, initial-scale=1">
+- design an interface for mobile first and then for desktop
+  - starting with 300 pixels
+  - see dev tools for seeing
+  - example: hidden navigation bar for phones 
+
+- device independent pixels : the reported view-port by the device NOT native
+
+- in css:
+
+```
+@media (max-width: 600px) {
+
+}
+
+@media (min-width: 601px) {
+
+}
+```
+
 
 - todo:
-  - The box model
-  - Handling conflicts
-  - CSS values and units
-  - Sizing items in CSS
   - Backgrounds and borders
 
   - Overflowing content
@@ -129,3 +164,5 @@ https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basi
   - position
 
   - play the game after reading the theory
+
+  - Challenge: Fundamental layout comprehension
