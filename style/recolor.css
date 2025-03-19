@@ -1,0 +1,12 @@
+p {
+  color: red !important;
+  color: blue !important;/* this works */
+}
+
+#REDD {
+  color: tomato;
+}
+
+#REDD:hover {
+  color: wheat;
+}
