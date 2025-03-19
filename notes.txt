@@ -30,9 +30,8 @@
   - global: *
   - attribute
 
-- pseudo-class :
-- pseudo-element ::
-- before, after insert html
+- pseudo-class ":"->state - (hover, first-child)
+- pseudo-element "::"->content - (first-line, before, after)
 
 - descendant combinators
   - read them from right to left
@@ -49,9 +48,10 @@ https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basi
 
 - block == one below another'
 
-- cascade
-- specificity
-- inheritance
+- specificity, cascade(source order and origin), inheritance(importance)
+- specificity: class selector > element selector
+
+- there are properties that can not be inherited
 
 - css origin
   - external stylesheet = extra file
@@ -65,7 +65,7 @@ https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basi
 - horizontal scroll - BAD PRACTICE
 - tables - will enforce the horizontal scroll
 
-## homework
+## solo
 
 - https://developer.mozilla.org/en-US/docs/Glossary/Character_reference
 
@@ -108,7 +108,9 @@ https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basi
 
 - replaced element = its content and size is changed my external source
 
-
+- be aware
+  - "h1, h2" = selector list
+  - "h1 h2" = combinators
 
 
 - todo:
