@@ -48,9 +48,13 @@ https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basi
 
 - block == one below another'
 
-- specificity, cascade(source order and origin), inheritance(importance)
-- specificity: class selector > element selector
-
+- cascade(specificity, source order, importance), inheritance
+- specificity: id selector > class selector > element selector
+  - each selector has a score for
+    - id
+    - classes (also attribute selectors: "[]")
+    - elements
+  - specificity conflicts => iterate the matched selectors, see score 
 - there are properties that can not be inherited
 
 - css origin
