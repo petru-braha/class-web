@@ -155,14 +155,18 @@ week 4:
 }
 ```
 
-
 - todo:
   - Backgrounds and borders
-
   - Overflowing content
   - flex grid
+
+week 4 - homework - css layout
+
+- properties
+  - float VS clear
+  - display
+    - flex
+      - alling-items: for flex-items - pos on cross-axis
+      - justify-content: for flex-items - pos on main-axis
   - position
-
-  - play the game after reading the theory
-
-  - Challenge: Fundamental layout comprehension
+  - ask for feedback

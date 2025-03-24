@@ -1,74 +1,100 @@
-@media (max-width: 300px) {
-  .logo {
-    font-size: 140%;
-    padding: 50px 20px;
-    margin: 0 auto;
-    max-width: 980px;
-  }
-
-  nav {
-    background-color: #000;
-    padding: 0.5em;
-  }
-
-  nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-  }
-
-  nav ul li {
-  }
-
-  nav a {
-    font-size: 10px;
-    color: #fff;
-    text-decoration: none;
-    padding: 0.5em 1em;
-  }
-
-  /* body-main-grid elements */
-  body {
-    background-color: #fff;
-    color: #333;
-    margin: 0;
-    font: 1.2em / 1.2 Arial, Helvetica, sans-serif;
-  }
-
-  h1,
-  h2 {
-    font-size: 22px;
-  }
-
-  p {
-    font-size: 15px;
-  }
-
-  img {
-    max-width: 100%;
-    display: block;
-    margin-bottom: 5px;
-  }
-
-  .grid {
-    margin: 0 auto;
-    padding: 0 20px;
-    max-width: 980px;
-  }
-
-  .photos {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
+body {
+  background-color: #fff;
+  color: #333;
+  margin: 0;
+  font: 1.2em / 1.2 Arial, Helvetica, sans-serif;
 }
 
-/* todo change the breakpoint*/
-@media (max-width: 600px) {
-  
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.logo {
+  font-size: 200%;
+  padding: 30px 20px;
+  margin: 0 auto;
+  max-width: 980px;
+}
+
+.grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  margin: auto;
+  max-width: 980px;
+}
+
+main article {
+  margin-right: 10px;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+
+  background-color: #000;
+  padding: .5em;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: .5em 1em;
+}
+
+.photos {
+  gap: .5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 18em;
+  height: 18em;
+
+  list-style: none;
+  padding: 0em;
 }
 
 .feature {
   float: left;
+
+  width: 15em;
+  height: 15em;
+  margin-right: 1em;
+  margin-bottom: .5em;
+  padding-left: 0em;
+  padding-right: 0em;
+}
+
+article p:nth-of-type(3) {
+  clear: left;
+}
+
+@media (max-width: 340px) {
+  body {
+    font: 0.3em / 1.2 Arial, Helvetica, sans-serif;
+  }
+}
+
+@media (min-width: 341px) and (max-width: 660px) {
+  body {
+    font: 0.6em / 1.2 Arial, Helvetica, sans-serif;
+  }
+}
+
+@media (min-width: 661px) and (max-width: 1200px) {
+  body {
+    font: 1.2em / 1.2 Arial, Helvetica, sans-serif;
+  }
 }
