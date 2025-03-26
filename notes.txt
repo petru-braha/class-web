@@ -126,7 +126,7 @@ week 4:
 
 - 1fr one fraction - of the container
 
-- responsivness = relative dimensions
+- responsiveness = relative dimensions
   - inch
   - count of pixels
   - flexboxes / grids g00d
@@ -155,11 +155,6 @@ week 4:
 }
 ```
 
-- todo:
-  - Backgrounds and borders
-  - Overflowing content
-  - flex grid
-
 week 4 - homework - css layout
 
 - properties
@@ -170,3 +165,34 @@ week 4 - homework - css layout
       - justify-content: for flex-items - pos on main-axis
   - position
   - ask for feedback
+
+week 5 - forms
+
+- for attribute of the <label> tag == id attribute of the <input>
+
+- html forms does not use web sockets
+
+- form attribute
+  - method
+    - get
+    - post
+    - we can create another verb
+  - action
+    - sends an HTTP request
+    - contains an url
+
+- GET: name attribute appers in the url-parameters
+  - name attribute is MANDATORY
+
+- HTTP request
+  - GET - head of attributes
+  - POST - body of attributes
+
+- POST: password is NOT hidden from
+
+- input validation at BACKEND
+
+- todo:
+  - Backgrounds and borders
+  - Overflowing content
+  - change responsiveness pe mobile
