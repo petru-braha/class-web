@@ -212,3 +212,5 @@ week 6
 - see htdocs
 
 - phpMyAdmin can run queries
+
+# TODO MAKE DATABASE XAMPP WORK, MAKE LOGIN LOGOUT PAGES FAST
