@@ -196,3 +196,17 @@ week 5 - forms
   - Backgrounds and borders
   - Overflowing content
   - change responsiveness pe mobile
+
+week 6
+
+- play with
+  - display different things depending on coockies
+  - save coockie after login
+  - cookie
+    - login
+    - set
+    - check if the cookie exist
+  - session
+
+- sudo /opt/lampp/lampp start
+- see htdocs
