@@ -213,4 +213,6 @@ week 6
 
 - phpMyAdmin can run queries
 
+- xampp = cross-platform apache maria php perl
+
 # TODO MAKE DATABASE XAMPP WORK, MAKE LOGIN LOGOUT PAGES FAST

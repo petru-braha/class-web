@@ -1,4 +1,5 @@
 #!/bin/bash
+# sets the selected lab as the default landing of localhost 
 
 number=""
 read -p "choose the laboratory number: x = " number
