@@ -210,3 +210,5 @@ week 6
 
 - sudo /opt/lampp/lampp start
 - see htdocs
+
+- phpMyAdmin can run queries

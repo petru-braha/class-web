@@ -1,0 +1,26 @@
+Acest director include un exemplu de invocare a unui serviciu Web
+via HTTP (se bazeaza pe unele dintre principiile REST discutate la curs).
+
+* rest-url.php - un program PHP care recurge la libcurl pentru a invoca 
+                 prin metoda GET un serviciu Web public de prescurtare de URL-uri;
+                 raspunsul XML oferit va fi procesat cu DOM. 
+
+* rest-cat.php - un program PHP ce realizeaza o cerere GET spre 
+                 serviciul Web REST oferind o imagine (reprezentare JPEG)
+                 corespunzatoare unui cod de stare HTTP; se utilizeaza diverse
+                 optiuni de conectare la serverul Web, 
+                 plus alte facilitati de interes.
+
+ 
+Detalii privitoare la biblioteca LibcURL sunt disponibile la 
+<https://curl.haxx.se/>.
+
+A se consulta si manualul PHP aferent:
+<https://www.php.net/manual/en/book.curl.php>.
+
+Toate aceste fisiere au fost concepute de Sabin-Corneliu Buraga (2012, 2014, 2017, 2020, 2021)
+putand fi utilizate sub auspiciile prevazute de 
+Creative Commons Attribution-NonCommercial-ShareAlike License: 
+<https://creativecommons.org/licenses/>.
+
+Ultima actualizare: 20 aprilie 2021

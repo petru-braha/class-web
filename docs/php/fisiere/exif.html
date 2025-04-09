@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><title>Transfer imagini</title></head>
+<body>
+<!-- formular Web folosit la transferul unui fisier spre programul PHP
+     invocat la nivel de server Web -->
+<form action="exif.php" method="POST" enctype="multipart/form-data">
+	<!-- campul ascuns MAX_FILE_SIZE stabileste dimensiunea maxima 
+	     a fisierului ce va fi transmis (aici, 10 MB) -->
+    <input type="hidden" name="MAX_FILE_SIZE" value="10485760" />
+	<label for="img">Furnizati o imagine:</label>
+	<input type="file" id="img" name="img" title="Imagine de maxim 10 MB" />
+	<input type="submit" value="Preia meta-date ca date CSV" />
+</form>
+</body>
+</html>

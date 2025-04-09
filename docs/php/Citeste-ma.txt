@@ -1,0 +1,140 @@
+Acest director contine o serie de programe-sursa educationale si resurse aditionale, 
+ilustrand anumite aspecte legate de programarea Web in PHP.
+
+De parcurs si cartea disponibila liber: 
+J. Lockhart, P. Sturgeon, "PHP The Right Way" (2025): <https://www.phptherightway.com/>.
+
+Pentru detalii, a se consulta -- obligatoriu! -- prelegerea disponibila la adresa Web
+<https://https://edu.info.uaic.ro/web-technologies/web-film.html#week5>.
+
+In directorul sintaxa/ (aspecte legate de sintaxa PHP)
+* valori.php            - exemplifica utilizarea variabilelor de diverse tipuri 
+                          si folosirea instructiunilor de ciclare 'for' 
+                          si 'foreach'
+* valori2.php           - ca mai sus, dar recurge la utilizarea de constante
+* patrat.php            - ilustreaza definirea unei functii si utilizarea 
+                          instructiunilor 'if' si 'while'
+* tipuri-stricte.php    - program PHP 7 exemplificand verificarea stricta a tipurilor de date (strong-type)
+* funct.php             - adoptarea paradigmei functionale in conjunctie cu tablourile
+* magic.php             - exemplifica folosirea unor constante 'magice' globale 
+                          oferite la executie de mediul PHP
+* animale.php 			    - ilustrarea utilizarii caracterelor Unicode si a (de)codificarii datelor JSON 
+                          (functioneaza incepand cu PHP 7)
+* fn-php7.4.php         - exemplifica folosirea functiilor anonime specificate prescurtat cu 'fn'
+                          (functioneaza de la PHP 7.4+) 
+
+In directorul clase/ (detalii privind caracterul orientat-obiect -- vezi prelegerea de la curs)
+* student.php           - exemplifica specificarea de clase si clase derivate, 
+                          de constructori & destructori, plus 
+                          utilizarea modificatorilor de acces
+* introspect.php        - ilustreaza mecanismul de introspectie via ReflectionClass
+* macheta.php           - exemplu de definire a unei interfete
+* figuri.php            - exemplifica maniera de folosire a trasaturilor (traits)
+
+--
+
+In directorul interactiune/ (amanunte legate de interactiunea cu utilizatorul)
+* formular.html         - document Web specificand un formular HTML ce preia date
+                          despre identitatea si varsta unei persoane 
+* afiseaza.php          - exemplifica preluarea datelor receptionate 
+                          via formularul Web de mai sus, cu verificarea unor conditii
+* culori.php            - exemplifica folosirea cookie-urilor pentru a retine 
+                          culoarea de fundal preferata de un utilizator
+* url.php               - ilustreaza modul de procesare a componentelor unui URL                          
+
+In directorul fisiere/ (prelucrarea fisierelor transferate de la client)
+* exif.php              - exemplifica preluarea unei imagini via un formular
+                          pentru a oferi meta-date de interes; se folosesc
+                          si exceptii specificate de programator
+                          (in fisierul de configurare 'php.ini', a se verifica 
+                          daca exista extensiile 'php_fileinfo' si 'php_exif'
+                          activate -- e.g., trebuie sa existe directiva 
+                          'extension=php_fileinfo')
+* exif.html             - documentul HTML ce defineste formularul Web folosit
+* info-exif.CSV         - documentul CSV (Comma Separated Values) cu meta-datele EXIF
+                          generate pe baza imaginii procesate de programul PHP
+                          de mai sus
+
+--
+
+In directorul baze-de-date/ (detalii referitoare la manipularea bazelor de date)
+* interogare-mysqli.php - program simplu folosind extensia mysqli pentru accesul la
+                          MySQL/MariaDB (necesita minim PHP 5)
+* interogare-pdo.php    - program demonstrand utilizarea accesului de un server de
+                          baze de date via PDO (PHP Data Object);
+                          de citit tutorialul de la <https://phpdelusions.net/pdo>                          
+* interogare.php        - program simplu ilustrand maniera de interogare a 
+                          serverului MySQL in PHP 4
+                          (varianta demodata; nu mai e valabila pentru PHP 7+)
+* bd.php                - defineste o clasa de manipulare a bazelor de date 
+* bd_ex.php             - exemplifica utilizarea clasei din fisierul precedent
+* stud.sql              - baza de data 'stud' folosita in exemple -- a se popula 
+                          baza de date cu mysql -u utilizator -p < stud.sql
+* sqlite.php            - ilustreaza utilizarea extensiei SQLite in conjunctie 
+                          cu procesarea XML simplificata
+* punctaje.xml          - document XML folosit de script-ul sqlite.php
+
+In directorul web-scraping/ (procesare cu PHP a documentelor HTML (invalide))
+* scraping.php          - preia informatii despre produse (albume muzicale)
+                          de pe un sit Web de profil pe baza functionalitatilor 
+                          oferite de biblioteca Simple HTML DOM Parser 
+                          <http://simplehtmldom.sourceforge.net/>.
+
+--
+
+In directorul xml/ (aspecte privitoare la procesarea documentelor XML 
+                    ce vor fi prezentate in cursurile viitoare)
+
+- sub-directorul DOM/ contine exemple referitoare la prelucrarea via DOM
+- sub-directorul simplificat/ contine exemplificari legate de procesarea XML 
+  simplificata (Simple XML)
+
+--
+
+In directorul servicii-web/ (detalii referitoare la implementarea si 
+                             apelarea de servicii Web -- vezi cursurile viitoare)
+
+Sub-directorul rest/ ofera exemplificari vizand accesul la un serviciu REST 
+prin intermediul bibliotecii cURL -- de parcurs 'Citeste-ma.txt' aferent.
+
+Pentru curiosi, iata maniera de implementare a serviciilor Web cu SOAP.
+Sub-directorul oranges/ exemplifica interogarea sortimentelor de portocale 
+(implementari in PHP5+ ale serviciului Web si ale clientului):
+* oranges-server.php - codul-sursa al serviciului Web, invocabil prin SOAP
+* oranges-client.php - codul programului ce apeleaza
+                       serviciul Web implementat de fisierul anterior
+In prealabil, de inclus linia 'extension=soap' in fisierul de configurare 'php.ini'
+al mediului PHP dupa care trebuie restartat serverul Web.
+
+Sub-directorul calculator/ furnizeaza maniera de invocare in PHP7 a unui serviciu Web public 
+(aici, Calculator <http://www.dneonline.com/calculator.asmx> implementat in .NET) 
+pe baza descrierii WSDL expuse -- a se studia prelegerea de la curs:
+* calculator.php - codul-sursa al clientului SOAP ce furnizeaza suma a 2 numere intregi
+                   pe baza operatiei Add oferite de serviciul Web
+In prealabil, de inclus linia 'extension=soap' in fisierul de configurare 'php.ini'
+al mediului PHP dupa care trebuie restartat serverul Web.  
+
+--
+
+Sursele exemplelor sunt furnizate in regim open-source, conform termenilor 
+stipulati de Creative Commons Attribution-NonCommercial-ShareAlike License: 
+<https://creativecommons.org/licenses/>.
+
+Ca medii de exploatare (deployment), se va putea recurge la:
+* AMPPS  <https://www.ampps.com/>
+* XAMMP  <https://www.apachefriends.org/>
+
+Pentru realizarea unor experimente rapide direct pe Web, 
+se pot folosi aplicatiile online:
+* Ideone     <https://ideone.com/>
+* PHPTester  <http://phptester.net/>
+* Online PHP <https://onlinephp.io/>
+
+Pentru aspecte mai avansate, de considerat si mediile Web de dezvoltare:
+* Red Hat OpenShift Dev Spaces <developers.redhat.com/products/openshift-dev-spaces/overview>
+* Replit <https://repl.it/languages/php>
+
+Diverse (fragmente de) programe PHP au fost concepute de 
+Prof. Sabin-Corneliu Buraga: <https://profs.info.uaic.ro/sabin.buraga/>.
+
+Ultima actualizare: 24 martie 2025

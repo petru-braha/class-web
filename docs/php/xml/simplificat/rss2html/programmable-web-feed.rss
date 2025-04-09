@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss version="2.0" xml:base="https://www.programmableweb.com/rss_blog">
+<channel>
+  <title>ProgrammableWeb.com</title>
+  <link>https://www.programmableweb.com/rss_blog</link>
+  <description>The leading source of news and information around APIs, Mashups, Apps and the Web as a Platform.</description>
+  <language>en</language>
+  <item>
+      <title>11 Popular Marketplace APIs</title>
+      <link>https://www.programmableweb.com/news/11-popular-marketplace-apis/brief/2021/04/04</link>
+      <description>&lt;p&gt;Buyers and sellers of the world rejoice!&lt;/p&gt;</description>
+      <pubDate>Sun, 04 Apr 2021 19:35:25 -0400</pubDate>
+  </item>
+  <!-- alte elemente <item> -->
+</channel>
+</rss>

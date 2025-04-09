@@ -1,0 +1,22 @@
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>InfoQ</title>
+    <link>https://www.infoq.com</link>
+    <description>InfoQ feed</description>
+    <item>
+      <title>...</title>
+      <link>https://www.infoq.com/news/</link>
+      <description>&lt;p&gt;...&lt;/p&gt;</description>
+      <category>Open JDK</category>
+      <category>Architecture &amp; Design</category>
+      <category>Development</category>
+      <category>news</category>
+      <pubDate>Wed, 29 Mar 2023 05:45:00 GMT</pubDate>
+      <guid>https://www.infoq.com/news/</guid>
+      <dc:creator>...</dc:creator>
+      <dc:date>2023-03-29T05:45:00Z</dc:date>
+      <dc:identifier>/news/.../en</dc:identifier>
+    </item>
+    <!-- alte noutăți... (i.e., elemente <item>) -->
+  </channel>
+</rss>

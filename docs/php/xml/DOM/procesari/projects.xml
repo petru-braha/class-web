@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<!-- Document XML despre proiectele propuse -->     
+<projects>
+  <project class="M">
+    <title>MegaProj</title>
+    <desc>...</desc>
+    <stud>2</stud>
+    <url>http://web.info/</url>
+  </project>
+  <project>
+    <title>Web4all</title>
+    <desc />
+    <stud>3</stud>
+  </project>
+</projects>

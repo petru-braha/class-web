@@ -1,0 +1,21 @@
+(infoiasi)$ mysql -u root -p mysql
+Enter password: **********
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Server version: 10.4.11-MariaDB Source distribution
+
+MariaDB [mysql]> GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP ON students.* TO 'tux@localhost' IDENTIFIED BY 'p@rola' WITH GRANT OPTION;
+Query OK, 0 rows affected (0.001 sec)
+
+MariaDB [mysql]> USE students;
+Database changed
+
+MariaDB [students]> DESCRIBE students;   
++-------+---------------------+------+-----+---------+----------------+
+| Field | Type                | Null | Key | Default | Extra          |
++-------+---------------------+------+-----+---------+----------------+
+| name  | varchar(50)         | NO   |     | NULL    |                |
+| year  | enum('1','2','3')   | NO   |     | NULL    |                |
+| id    | int(11) unsigned    | NO   | PRI | NULL    | auto_increment |
+| age   | tinyint(3) unsigned | NO   |     | NULL    |                |
++-------+---------------------+------+-----+---------+----------------+
+4 rows in set (0.001 sec)

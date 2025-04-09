@@ -1,0 +1,37 @@
+Acest director contine exemplificari de procesare simplificata 
+a documentelor XML folosind limbajul PHP.
+
+Pentru detalii, a se studia Sabin Buraga, "Tehnologii XML", Polirom, 2006
+-- versiunea online poate fi parcursa la adresa Web
+<https://profs.info.uaic.ro/~busaco/teach/courses/web/presentations/Sabin_Buraga-Tehnologii_XML.pdf>.
+
+In directorul projects\
+* projects.php - program care proceseaza un document XML prin intermediul
+                 interfetei simplificate SimpleXML
+* projects.xml - un document XML de test ce modeleaza informatii despre proiecte
+                 propuse la disciplina 'Retele de calculatoare'
+
+In directorul atom\
+* viewatom.php - program folosit la extragerea stirilor dintr-un document Atom
+* atom.xml     - document Atom continand stirile privitoare la un blog,
+                 generate de Blogger.com
+
+In directorul rss2html\
+* show-news    - program ce preia o stire dintr-un flux de stiri (document) RSS public 
+                 si genereaza prin program o reprezentare HTML 
+* programmable-web-feed.rss - un document RSS (XML) de test
+
+In directorul rss2json\
+* rss2json.xml - program ce preia o stire dintr-un document RSS 
+                 si genereaza o reprezentare JSON a datelor despre aceasta 
+* programmable-web-feed.rss - un document RSS concret oferit de un sit Web real
+
+
+Toate aceste fisiere au fost scrise de Sabin-Corneliu Buraga 
+(2006-2009, 2013, 2014, 2017, 2020, 2021).
+
+Permisiunile de utilizare sunt cele stipulate de 
+Creative Commons Attribution-NonCommercial-ShareAlike: 
+https://creativecommons.org/licenses/
+
+Ultima actualizare: 29 martie 2023

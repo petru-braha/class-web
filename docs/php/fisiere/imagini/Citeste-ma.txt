@@ -1,0 +1,2 @@
+Aici vor fi stocate fisierele transferate de la client (upload).
+Acest director trebuie sa aiba drepturi de scriere.

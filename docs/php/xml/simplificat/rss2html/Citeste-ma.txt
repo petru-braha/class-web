@@ -1,0 +1,16 @@
+Acest director include un exemplu de procesare in PHP a unui flux de stiri RSS
+(Really Simple Syndication) -- e.g., cel oferit de situl InfoQ via URL-ul
+<https://www.infoq.com/feed> -- pe baza XPath si SimpleXML.
+
+* show-news.php 
+  - program PHP care genereaza un document HTML prezentand ultimele noutati oferite de un flux RSS 
+    (aici, cel public generat de Programmable Web <https://www.programmableweb.com/rss_blog>)
+* programmable-web-feed.rss     
+  - fragment de document RSS (XML) preluat de pe situl Programmable Web;
+    specificatia RSS poate fi consultata la <https://www.rssboard.org/rss-specification>.
+
+Codul-sursa a fost conceput de Sabin-Corneliu Buraga, 
+putand fi folosit conform  Creative Commons Attribution-NonCommercial-ShareAlike 4.0 License: 
+<https://creativecommons.org/licenses/>.
+
+Ultima actualizare: 05 aprilie 2021
