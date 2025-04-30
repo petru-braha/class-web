@@ -5,3 +5,7 @@ feed of posts (write everything in a single php file)
   - description (database)
   - image (name of image in database)
 - alligned centraly
+
+to do:
+- centralised view
+- file separation
