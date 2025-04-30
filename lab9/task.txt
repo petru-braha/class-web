@@ -1,0 +1,7 @@
+feed of posts (write everything in a single php file)
+- generate dynamically html from database
+- post:
+  - name user (database)
+  - description (database)
+  - image (name of image in database)
+- alligned centraly
