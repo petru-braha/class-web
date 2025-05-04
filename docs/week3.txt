@@ -1,0 +1,79 @@
+## week 3
+
+- block vs inline display
+
+- block == one below another'
+
+- cascade(specificity, source order, importance), inheritance
+- specificity: id selector > class selector > element selector
+  - each selector has a score for
+    - id
+    - classes (also attribute selectors: "[]")
+    - elements
+  - specificity conflicts => iterate the matched selectors, see score 
+- there are properties that can not be inherited
+
+- css origin
+  - external stylesheet = extra file
+  - head tag inside the tag style 
+  - any hypertag - style tag/attribute
+
+- flex and grid (read about them) - floats chapter
+
+- float cuts up the view port
+
+- horizontal scroll - BAD PRACTICE
+- tables - will enforce the horizontal scroll
+
+## solo
+
+- article
+  - encloses info on the page that has meaning by its own
+  - e.g. blog post
+
+- section
+  - groups up info on the page that provides functionality
+  - starts with heading
+
+- <blockquote> vs <q> == block vs inline
+- <pre> - preserves the white spaces
+
+- <a href=""><cite>
+- <address> = contact information
+- <sup> <sub> - inline
+
+- attributes:
+  - title is displayed when hovering over the content
+  - target="_blank" => open in a new tab
+  - alt is alternative text in case if the resource can not load
+  - specifying width and height allocates space before loading image
+  - display: block/inline - refers to outer box display
+    - by default flex/grid refers to outer box too
+
+- document fragments - href of an id
+- use your own content (images)
+
+- licenses
+  - all rights reserved (default)
+    - you need explicit written permission to use the content
+    - you DO NOT need that in case of fair use
+      - quoting/commenting upon
+      - criticize
+      - parody
+    - authors are not required to include a copyright notice
+  - permissive - mit licence
+  - public domain/CC0
+
+- replaced element = its content and size is changed my external source
+
+- be aware
+  - "h1, h2" = selector list
+  - "h1 h2" = combinators
+
+- css data type: <dimension> covers
+  - <length>
+  - <angle>
+  - <time>
+  - <resolution>
+
+- px, em(relative), vh, vw

@@ -1,0 +1,17 @@
+## week 6
+
+- play with
+  - display different things depending on coockies
+  - save coockie after login
+  - cookie
+    - login
+    - set
+    - check if the cookie exist
+  - session
+
+- sudo /opt/lampp/lampp start
+- see htdocs
+
+- phpMyAdmin can run queries
+
+- xampp = cross-platform apache maria php perl

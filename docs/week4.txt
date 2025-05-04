@@ -1,0 +1,43 @@
+## week 4:
+
+- 1fr one fraction - of the container
+
+- responsiveness = relative dimensions
+  - inch
+  - count of pixels
+  - flexboxes / grids g00d
+  - media query - if statements about context
+
+- device independent pixels
+  - viewport is smaller than a the screen itself
+
+- <meta name="viewport" content="width=device-width, initial-scale=1">
+- design an interface for mobile first and then for desktop
+  - starting with 300 pixels
+  - see dev tools for seeing
+  - example: hidden navigation bar for phones 
+
+- device independent pixels : the reported view-port by the device NOT native
+
+- in css:
+
+```
+@media (max-width: 600px) {
+
+}
+
+@media (min-width: 601px) {
+
+}
+```
+
+## week 4 - homework - css layout
+
+- properties
+  - float VS clear
+  - display
+    - flex
+      - alling-items: for flex-items - pos on cross-axis
+      - justify-content: for flex-items - pos on main-axis
+  - position
+  - ask for feedback

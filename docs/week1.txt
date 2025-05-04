@@ -1,0 +1,9 @@
+## week 1
+
+- <p> just for simple text
+- view port is the area where the resources are loaded. it does not belong to the browser elements
+- html element: <p>content</p>
+
+- script tag can be used outside of the html standard body
+
+- what is visible in view port will be placed in the body, everything else in head

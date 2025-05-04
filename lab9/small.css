@@ -1,0 +1,22 @@
+body {
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+}
+
+article {
+  background-color: cornflowerblue;
+}
+
+article h2 {
+  margin: 5%;
+}
+
+article p {
+  margin: 5%;
+}
+
+article img {
+  display: block;
+  margin: 0 auto;
+}

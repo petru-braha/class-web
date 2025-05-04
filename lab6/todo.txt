@@ -1,3 +1,0 @@
-- work on the authentification module
-- work on php
-- work on cookies

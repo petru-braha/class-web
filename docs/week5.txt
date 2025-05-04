@@ -1,0 +1,25 @@
+## week 5 - forms
+
+- for attribute of the <label> tag == id attribute of the <input>
+
+- html forms does not use web sockets
+
+- form attribute
+  - method
+    - get
+    - post
+    - we can create another verb
+  - action
+    - sends an HTTP request
+    - contains an url
+
+- GET: name attribute appers in the url-parameters
+  - name attribute is MANDATORY
+
+- HTTP request
+  - GET - head of attributes
+  - POST - body of attributes
+
+- POST: password is NOT hidden from
+
+- input validation at BACKEND

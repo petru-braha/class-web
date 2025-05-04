@@ -1,0 +1,33 @@
+## week 2
+
+- <div> and <span> doesn't do anything functionally and visually
+- <span> inside of text
+- <br> inside of text
+
+- padding(bettween element with their own border, if no border) vs margin(to another element)
+
+- content - padding - border - margin(think of it in raport of other elements (always))
+
+- css: selector { properties: name : value; };
+- id select should be unique (even if css can)
+
+- html ref => ids
+
+- selector
+  - markup
+  - class
+  - id
+  - global: *
+  - attribute
+
+- pseudo-class ":"->state - (hover, first-child)
+- pseudo-element "::"->content - (first-line, before, after)
+
+- descendant combinators
+  - read them from right to left
+  - constraint from left to right
+  - e.g.: body section p
+https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Combinators
+
+- next - + 
+- subsequent
