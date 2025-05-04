@@ -3,3 +3,10 @@
 - /opt/lampp/xampp start
 - /opt/lampp/xampp stop
 - /opt/lampp/bin/mysql -h localhost -u root -p
+- tail -n 50 /opt/lampp/logs/error_log
+
+- changed /opt/lampp/etc/httpd.conf: DirectoryIndex index.html index.html.var index.php index.php3 index.php4
+
+- solution
+- iconv -f utf-16 -t utf-8 /opt/lampp/htdocs/lab9/index.php -o /opt/lampp/htdocs/lab9/index_clean.php
+- mv /opt/lampp/htdocs/lab9/index_clean.php /opt/lampp/htdocs/lab9/index.php
