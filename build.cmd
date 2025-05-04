@@ -1,5 +1,5 @@
 @echo off
-:: sets the selected lab as the default landing of localhost 
+:: sets the selected lab as the default landing of localhost
 :: to revisit
 
 set /p number=Choose the laboratory number: x = 
@@ -21,16 +21,15 @@ if exist "%destination%" (
 mkdir "%destination%"
 xcopy /E /I /Y "%source%\*" "%destination%"
 
-echo ^<?php > index.php
-echo if (!empty($_SERVER['HTTPS']) && ('on' == $_SERVER['HTTPS'])) { >> index.php
-echo     $uri = 'https://'; >> index.php
-echo } else { >> index.php
-echo     $uri = 'http://'; >> index.php
-echo } >> index.php
-echo $uri .= $_SERVER['HTTP_HOST']; >> index.php
-echo header('Location: '.$uri.'/%source%'); >> index.php
-echo exit; >> index.php
+echo ^<?php> index.php
+echo if (!empty($_SERVER['HTTPS']) ^&^& ('on' == $_SERVER['HTTPS'])) {>> index.php
+echo     $uri = 'https://';>> index.php
+echo } else {>> index.php
+echo     $uri = 'http://';>> index.php
+echo }>> index.php
+echo $uri .= $_SERVER['HTTP_HOST'];>> index.php
+echo header('Location: ' . $uri . '/%source%');>> index.php
+echo exit;>> index.php
 
 del "F:\xampp\htdocs\index.php"
 move index.php "F:\xampp\htdocs\"
-pause
