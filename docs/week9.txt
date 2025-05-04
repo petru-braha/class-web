@@ -4,6 +4,7 @@
 - /opt/lampp/xampp stop
 - /opt/lampp/bin/mysql -h localhost -u root -p
 - tail -n 50 /opt/lampp/logs/error_log
+- ALTER USER root@localhost IDENTIFIED BY 'student';
 
 - changed /opt/lampp/etc/httpd.conf: DirectoryIndex index.html index.html.var index.php index.php3 index.php4
 

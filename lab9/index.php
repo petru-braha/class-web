@@ -4,7 +4,7 @@
 $DB = new mysqli(
   'localhost',
   'root',
-  '',
+  $_ENV['DB_PASSWORD'],
   'facebook'
 );
 
@@ -12,8 +12,11 @@ if (mysqli_connect_errno()) {
   die('error: database connection failed');
 }
 
-if (!($statement = $DB->query(
-  'SELECT username, description, imageUrl FROM post'))) {
+if (
+  !($statement = $DB->query(
+    'SELECT username, description, imageUrl FROM post'
+  ))
+) {
   die('error: query failed' . $DB->error);
 }
 
@@ -25,7 +28,7 @@ echo '
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title></title>
+    <title>lab9-posts</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>

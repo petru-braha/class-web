@@ -1,21 +1,30 @@
 <?php
 
-$mysql = new mysqli(
-  'localhost',
-  'root',
-  '',
-  'facebook'
-);
+function getPosts()
+{
+  $db = new mysqli(
+    'localhost',
+    'root',
+    $_ENV['DB_PASSWORD'],
+    'facebook'
+  );
 
-if (mysqli_connect_errno()) {
-  die('error: database connection failed.');
+  if ($db->connect_errno) {
+    die('error: database connection failed');
+  }
+
+  $result = $db->query(
+    'SELECT username, description, imageUrl FROM post'
+  );
+  if (!$result) {
+    die('error: query failed ' . $db->error);
+  }
+
+  $posts = [];
+  while ($row = $result->fetch_assoc()) {
+    $posts[] = $row;
+  }
+
+  $db->close();
+  return $posts;
 }
-
-if (!($statement = $mysql->query(
-  'SELECT username, description, imageUrl FROM post'))) {
-  die('error: query');
-}
-
-$mysql->close();
-
-// return to the controller: while ($row = $statement->fetch_assoc())
