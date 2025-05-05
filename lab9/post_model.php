@@ -5,7 +5,7 @@ function getPosts()
   $db = new mysqli(
     'localhost',
     'root',
-    $_ENV['DB_PASSWORD'],
+    $_ENV['DB_PASSWORD'] ?? '',
     'facebook'
   );
 
@@ -16,6 +16,7 @@ function getPosts()
   $result = $db->query(
     'SELECT username, description, imageUrl FROM post'
   );
+
   if (!$result) {
     die('error: query failed ' . $db->error);
   }

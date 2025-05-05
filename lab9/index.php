@@ -4,7 +4,7 @@
 $DB = new mysqli(
   'localhost',
   'root',
-  $_ENV['DB_PASSWORD'],
+  $_ENV['DB_PASSWORD'] ?? '',
   'facebook'
 );
 
