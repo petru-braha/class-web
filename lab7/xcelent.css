@@ -1,0 +1,32 @@
+body {
+  background-color: rgb(199, 199, 199);
+  display: flex;
+  justify-content: center;
+}
+
+.anchor-button,
+button {
+  all: unset;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 0.5em 1em;
+
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  cursor: pointer;
+
+  transition: background-color 0.2s ease-in-out;
+}
+
+label {
+  color: rgb(85, 136, 255);
+}
+
+input {
+  margin-left: auto;
+  margin-right: auto;
+}

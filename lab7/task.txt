@@ -1,0 +1,8 @@
+small login system
+- 10 seconds session
+- logged
+  - dashboard
+  - logout button
+- else
+  - login button
+  - register button

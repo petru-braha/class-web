@@ -1,5 +1,5 @@
 <?php
-define('COOKIE_NAME', 'user_session');
+define('COOKIE_NAME', 'userSession');
 define('COOKIE_EXPIRY', 3600); // 1 hour
 
 define('DB_HOST', 'localhost');

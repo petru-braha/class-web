@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -7,25 +6,24 @@
     <title>lab7-login</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <style>
-      body {
-        background-color: khaki;
-        display: flex;
-        justify-content: center;
-      }
-    </style>
+    <link rel="stylesheet" href="xcelent.css" />
   </head>
 
   <body>
     <main>
-      <form method="post" action="login.php">
+      <form method="post" action="authentication.php">
         <label for="email"> email: </label><br />
         <input type="email" id="email" name="email" /><br />
+
         <label for="password"> password: </label><br />
         <input type="password" id="password" name="password" /><br />
-        <input type="submit" value="login" />
-        <input type="submit" value="register" />
+
+        <input type="submit" value="login" class="anchor-button" />
+      </form>
+
+      <a href="inreg.html" class="anchor-button">signup</a>
+      <form>
+        <button>press</button>
       </form>
     </main>
   </body>

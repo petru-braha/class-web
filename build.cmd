@@ -2,8 +2,7 @@
 :: sets the selected lab as the default landing of localhost
 :: to revisit
 
-set /p number=Choose the laboratory number: x = 
-set "source=lab%number%"
+set /p source=write the laboratory directory: 
 set "destination=F:\xampp\htdocs\%source%"
 
 if not exist "%source%\" (
