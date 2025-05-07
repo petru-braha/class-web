@@ -1,0 +1,4 @@
+## week 7
+
+- use the database server
+  - do not load your own backend unnecessarily

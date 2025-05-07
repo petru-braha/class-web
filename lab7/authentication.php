@@ -26,9 +26,14 @@ if ($db->connect_error) {
   die('error: ' . $db->connect_error);
 }
 
-$result = $db->query(
-  'SELECT email, hashed_password FROM user'
+$result = $db->prepare(
+  "SELECT email, hashed_password
+  FROM user
+    WHERE email = ?"
 );
+$result->bind_param("s", $email);
+$result->execute();
+$result = $result->get_result();
 
 if (!$result) {
   die('error: query failed');
@@ -37,24 +42,18 @@ if (!$result) {
 // login
 if ('' === $username) {
 
-  $isPresent = false;
-  while ($row = $result->fetch_assoc()) {
-    if ($email === $row['email']) {
-      $temp = password_verify(
-        $password,
-        $row['hashed_password']
-      );
-      if (false === $temp) {
-        die('error: invalid password');
-      } else {
-        $isPresent = true;
-        break;
-      }
-    }
+  if (0 == $result->num_rows) {
+    die('error: invalid email');
   }
 
-  if (!$isPresent) {
-    die('error: invalid email');
+  $row = $result->fetch_assoc();
+  if (
+    !password_verify(
+      $password,
+      $row['hashed_password']
+    )
+  ) {
+    die('error: invalid password');
   }
 
   $token = json_encode(
@@ -74,17 +73,17 @@ if ('' === $username) {
 
   header('Location: dashboard.php');
   $db->close();
-  exit;
+  exit(0);
 }
 
 // signup
-while ($row = $result->fetch_assoc()) {
-  if ($email === $row['email']) {
-    die('error: email already in use');
-  }
+if (0 != $result->num_rows) {
+  die('error: email already in use');
 }
 
-$stmt = $db->prepare("INSERT INTO user (username, email, hashed_password) VALUES (?, ?, ?)");
+$stmt = $db->prepare(
+  "INSERT INTO user (username, email, hashed_password) VALUES (?, ?, ?)"
+);
 $stmt->bind_param('sss', $username, $email, $hash);
 $result = $stmt->execute();
 
