@@ -12,3 +12,7 @@
 - solution
 - iconv -f utf-16 -t utf-8 /opt/lampp/htdocs/lab9/index.php -o /opt/lampp/htdocs/lab9/index_clean.php
 - mv /opt/lampp/htdocs/lab9/index_clean.php /opt/lampp/htdocs/lab9/index.php
+
+- a framework usually has the "render(view v)"
+- renderPosts() kinda sucks, it is better to write include_once in controller
+  - better to write direct html code instead of echos
