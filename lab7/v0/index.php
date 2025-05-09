@@ -1,5 +1,4 @@
 <?php
-session_start();
 if (isset($_COOKIE['userSession'])) {
   header("Location: dashboard.php");
   exit();
@@ -15,7 +14,7 @@ if (isset($_COOKIE['userSession'])) {
   <title>lab7-login</title>
   <meta name="description" content="login page for my users" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="xcelent.css" />
+  <link rel="stylesheet" href="../xcelent.css" />
 </head>
 
 <body>

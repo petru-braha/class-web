@@ -6,3 +6,6 @@ small login system
 - else
   - login button
   - register button
+
+- v0 uses manual cookie
+- v1 uses automatic session

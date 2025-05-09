@@ -38,7 +38,7 @@ else {
   <title>lab7-dashboard</title>
   <meta name="description" content="user-specific dashboard" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="xcelent.css" />
+  <link rel="stylesheet" href="../xcelent.css" />
 </head>
 
 <body>
