@@ -1,5 +1,6 @@
 ## week 9 - xampp
 
+- if debian: sudo /etc/init.d/apache2 stop
 - /opt/lampp/xampp start
 - /opt/lampp/xampp stop
 - /opt/lampp/bin/mysql -h localhost -u root -p

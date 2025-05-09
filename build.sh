@@ -1,9 +1,7 @@
 #!/bin/bash
 # sets the selected lab as the default landing of localhost 
 
-number=""
-read -p "choose the laboratory number: x = " number
-source="lab$number/"
+read -p "choose the source directory: " source
 destination="/opt/lampp/htdocs/$source"
 
 if [ ! -d "$source" ]; then
