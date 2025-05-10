@@ -18,14 +18,14 @@
 
     <?php
     $news = array(
-      "dst" => "https://distrowatch.com/",
-      "cnn" => "https://money.cnn.com/services/rss/",
+      "dst" => "https://distrowatch.com/news/dw.xml",
+      "cnn" => "http://rss.cnn.com/rss/money_technology.rss",
       "yho" => "https://www.yahoo.com/news/rss"
     );
 
     for ($i = 0; $i < 3; $i++) {
-      $dom = new DomDocument;
-      @$dom->load($sources[$i]);
+      $dom = new DomDocument();
+      $dom->load($sources[$i]);
 
       $items = $dom->getElementsByTagName("item");
 
