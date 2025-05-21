@@ -1,0 +1,12 @@
+- create a web page that
+  - prints
+    - the location of the user
+    - the weather close to him
+  - does not ask for user input, automatically gathers his data
+
+- location <= IP address <= HTTP request header <= $_SERVER
+  - in case of localhost and private IP addresses it won't work
+  - find a solution for that
+
+- there major APIs:
+  - check professor page
