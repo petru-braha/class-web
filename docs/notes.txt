@@ -1,0 +1,30 @@
+- sessions cookies sunt sterse la inchiderea browser-ului; acesta sterge automat memoria alocata pentru session cookies atunci cand toate procesele sale sunt inchise
+
+- $_COOKIE este populate automat cu cookies trimise de client
+- $_SESSION este populat automat dupa session_start()
+- $_SESSION nu sunt trimise clientului, raman pe server private
+
+- server receive client’s request
+- checks if there is a persistent cookie sent => populates $_COOKIE
+- checks if the token is valid - expired, correct account, IP compatibility
+- if yes then a session cookie is created and the user receives the home page
+- otherwise the login page
+
+- remember me button => sets up the persistent cookie => set_cookie()
+- $_COOKIE are locally (on the server stored), not sent to the client
+
+- session cookies
+  - are not persistent
+  - stored on RAM, not on disk
+  - the browser is closed, the cookie is deleted
+  - the values 
+  
+- session cookie => logged user
+- persistent cookie => logs the user, creates a session cookie
+- no cookie => login page
+- login => sets up session and/or persistent cookie
+
+- session_start()
+  - sends to user PHPSESSID
+  - populates $_SESSION with PHPSESSID
+  - updates on $_SESSION are stored on the server until the browser is closed
