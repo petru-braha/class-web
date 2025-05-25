@@ -1,0 +1,7 @@
+site with news
+- three providers
+  - https://distrowatch.com/
+  - https://money.cnn.com/services/rss/
+  - https://feeds.twit.tv/aaa.xml
+- use dom api, rss api
+- build your own rss
